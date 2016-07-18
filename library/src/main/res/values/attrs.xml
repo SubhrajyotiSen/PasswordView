@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="PasswordView">
-        <attr name="typeFace" format="string" />
         <attr name="strikeThrough" format="boolean"/>
         <attr name="eyeTint" format="color"/>
     </declare-styleable>
