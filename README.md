@@ -1,7 +1,7 @@
 #PasswordView 
 [ ![Download](https://api.bintray.com/packages/subhrajyotisen/maven/PasswordView/images/download.svg) ](https://bintray.com/subhrajyotisen/maven/PasswordView/_latestVersion)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
-[![API](https://img.shields.io/badge/API-15%2B-brightred.svg)](https://github.com/SubhrajyotiSen/PasswordView/)
+[![API](https://img.shields.io/badge/API-8%2B-brightred.svg)](https://github.com/SubhrajyotiSen/PasswordView/)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PasswordVew-green.svg)](https://android-arsenal.com/details/1/3941)
 
 ##Installation        
@@ -13,7 +13,7 @@ PasswordView is available on jcenter and be installed using
 	dependencies {
 		.
 		.
-	    compile 'com.subhrajyotisen:library:1.0'
+	    compile 'com.subhrajyotisen:library:1.1'
 	}
 
 
