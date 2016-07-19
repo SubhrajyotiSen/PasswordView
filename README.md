@@ -6,14 +6,11 @@
 
 ##Installation        
 PasswordView is available on jcenter and be installed using
-
-    repositories {
-	    jcenter()
-	}
+ 	
 	dependencies {
 		.
 		.
-	    compile 'com.subhrajyotisen:library:1.1'
+	    compile 'com.github.SubhrajyotiSen:library:1.1'
 	}
 
 
