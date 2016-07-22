@@ -7,7 +7,7 @@
 Inspired by [lisawray](https://github.com/lisawray/passwordview)
 
 ##Installation        
-PasswordView is available on jcenter and be installed using
+PasswordView is available on jcenter and can be installed using
  	
 	dependencies {
 		.
