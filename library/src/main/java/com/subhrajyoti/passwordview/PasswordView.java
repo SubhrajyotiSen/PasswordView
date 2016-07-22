@@ -34,7 +34,7 @@ public class PasswordView extends AppCompatEditText {
     private int eyeTint = Color.BLACK;
 
     //position of cursor in the view
-    private int cursorPosition;
+    private int cursorPosition = 0;
 
     public PasswordView(Context context) {
         super(context);
@@ -53,16 +53,16 @@ public class PasswordView extends AppCompatEditText {
 
     private void init(AttributeSet attrs) {
         if (attrs != null) {
-            TypedArray a = getContext().getTheme().obtainStyledAttributes(
+            TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(
                     attrs,
                     R.styleable.PasswordView,
                     0, 0);
-            useStrikeThrough = a.getBoolean(R.styleable.PasswordView_strikeThrough, false);
-            eyeTint = a.getColor(R.styleable.PasswordView_eyeTint, Color.BLACK);
-            a.recycle();
+            useStrikeThrough = typedArray.getBoolean(R.styleable.PasswordView_strikeThrough, false);
+            eyeTint = typedArray.getColor(R.styleable.PasswordView_eyeTint, Color.BLACK);
+            typedArray.recycle();
         }
 
-        //Mute the drawables so that multiple views can have separate visibilities
+        //Mutate the drawables so that multiple views can have separate visibilities
         eyeWithoutStrike = ContextCompat.getDrawable(getContext(), R.drawable.ic_visibility_black_24dp).mutate();
         eyeWithStrike = ContextCompat.getDrawable(getContext(), R.drawable.ic_visibility_off_black_24dp).mutate();
         DrawableCompat.setTint(eyeWithoutStrike, eyeTint);
@@ -112,9 +112,10 @@ public class PasswordView extends AppCompatEditText {
 
     @Override protected void onSelectionChanged(int selStart, int selEnd) {
         super.onSelectionChanged(selStart, selEnd);
-        if (this.cursorPosition > -1) {
+        if (this.cursorPosition >= getText().toString().length()){
             setSelection(this.cursorPosition);
             this.cursorPosition = -1;
         }
+
     }
 }
