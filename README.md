@@ -12,7 +12,7 @@ PasswordView is available on jcenter and be installed using
 	dependencies {
 		.
 		.
-	    compile 'com.github.SubhrajyotiSen:library:1.1'
+	    compile 'com.github.SubhrajyotiSen:library:1.1.1'
 	}
 
 
