@@ -4,6 +4,8 @@
 [![API](https://img.shields.io/badge/API-8%2B-brightred.svg)](https://github.com/SubhrajyotiSen/PasswordView/)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PasswordVew-green.svg)](https://android-arsenal.com/details/1/3941)
 
+Inspired by [lisawray](https://github.com/lisawray/passwordview)
+
 ##Installation        
 PasswordView is available on jcenter and be installed using
  	
