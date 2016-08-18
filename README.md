@@ -1,3 +1,6 @@
+#DEPRECATED        
+##Use the latest design support library instead
+
 #PasswordView 
 [ ![Download](https://api.bintray.com/packages/subhrajyotisen/maven/PasswordView/images/download.svg) ](https://bintray.com/subhrajyotisen/maven/PasswordView/_latestVersion)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
