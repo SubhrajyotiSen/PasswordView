@@ -1,5 +1,5 @@
-#DEPRECATED        
-##Use the latest design support library instead
+###DEPRECATED: Password view toggling has been added in Android Design Support Library 24.2.0
+
 
 #PasswordView 
 [ ![Download](https://api.bintray.com/packages/subhrajyotisen/maven/PasswordView/images/download.svg) ](https://bintray.com/subhrajyotisen/maven/PasswordView/_latestVersion)
