@@ -1,14 +1,14 @@
-###DEPRECATED: Password view toggling has been added in Android Design Support Library 24.2.0
+### DEPRECATED: Password view toggling has been added in Android Design Support Library 24.2.0
 
 
-#PasswordView 
+# PasswordView 
 [ ![Download](https://api.bintray.com/packages/subhrajyotisen/maven/PasswordView/images/download.svg) ](https://bintray.com/subhrajyotisen/maven/PasswordView/_latestVersion)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 [![API](https://img.shields.io/badge/API-8%2B-brightred.svg)](https://github.com/SubhrajyotiSen/PasswordView/)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PasswordVew-green.svg)](https://android-arsenal.com/details/1/3941)
 
 
-##Installation        
+## Installation        
 
 	dependencies {
 		.
@@ -19,10 +19,10 @@
 
 
 
-##Screenshot
+## Screenshot
 ![enter image description here](http://i.imgur.com/0d7zqaO.png)
 
-##Usage
+## Usage
 Touch the 'eye' icon to toggle visibility of password
 
 **XML**
@@ -36,7 +36,7 @@ Touch the 'eye' icon to toggle visibility of password
 
     PasswordView passwordView = (PasswordView)findViewById(R.id.passwordView);
 
-##Properties
+## Properties
 **eyeTint** 
 set the colour of the visibility toggle icon
 
@@ -54,7 +54,7 @@ use a strike-through across the visibility toggle icon when disabled
 		
 	app:strikeThrough="true"
 
-##License
+## License
     The MIT License (MIT)
 
     Copyright (c) 2014-2016 Subhrajyoti Sen
