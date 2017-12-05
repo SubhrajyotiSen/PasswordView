@@ -13,10 +13,9 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 public class PasswordView extends AppCompatEditText {
-
     /*Follow Material Design guidelines for opacity of visibility toggle icon
-        38% for disabled and 54% for enabled
-    */
+         38% for disabled and 54% for enabled
+     */
     private final static int VISIBILITY_ENABLED = (int) (255 * .54f);
     private final static int VISIBILITY_DISABLED = (int) (255 * .38f);
 
@@ -81,26 +80,28 @@ public class PasswordView extends AppCompatEditText {
         eyeWithoutStrike.setAlpha(visible && !useStrikeThrough ? VISIBILITY_ENABLED : VISIBILITY_DISABLED);
     }
 
-    @Override public boolean onTouchEvent(MotionEvent event) {
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_UP
                 && event.getX() >= (getWidth() - getCompoundDrawables()[2].getBounds().width() - getPaddingRight())
                 && event.getX() <= (getWidth() - getPaddingRight())) {
             visible = !visible;
             setup();
             invalidate();
-            this.cursorPosition = getSelectionStart();
             return true;
         }
 
         return super.onTouchEvent(event);
     }
 
-    @Override public void setInputType(int type) {
+
+    @Override
+    public void setInputType(int type) {
         super.setInputType(type);
         setTypeface(getTypeface());
     }
 
-    public void useStrikeThrough(boolean useStrikeThrough){
+    public void useStrikeThrough(boolean useStrikeThrough) {
         this.useStrikeThrough = useStrikeThrough;
         setup();
     }
@@ -110,12 +111,12 @@ public class PasswordView extends AppCompatEditText {
         setup();
     }
 
-    @Override protected void onSelectionChanged(int selStart, int selEnd) {
+    @Override
+    protected void onSelectionChanged(int selStart, int selEnd) {
         super.onSelectionChanged(selStart, selEnd);
-        if (this.cursorPosition >= getText().toString().length()){
+        if (this.cursorPosition >= getText().toString().length()) {
             setSelection(this.cursorPosition);
             this.cursorPosition = -1;
         }
-
     }
 }
