@@ -13,7 +13,7 @@
 	dependencies {
 		.
 		.
-	    compile 'com.github.SubhrajyotiSen:library:1.1.1'
+	    compile 'com.github.SubhrajyotiSen:library:1.1.2'
 	}
 
 

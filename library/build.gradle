@@ -44,7 +44,7 @@ ext {
     gitUrl = 'https://github.com/SubhrajyotiSen/PasswordView.git'
     githubRepository = "SubhrajyotiSen/PasswordView"
 
-    libraryVersion = '1.1.1'
+    libraryVersion = '1.1.2'
 
     developerId = 'SubhrajyotiSen'
     developerName = 'Subhrajyoti Sen'
@@ -56,3 +56,4 @@ ext {
 }
 apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.github.com/nisrulz/gradle-mvn-push/master/gradle-mvn-push.gradle'
